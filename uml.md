@@ -78,6 +78,7 @@ classDiagram
         +pet: Pet
         +generate_plan(shared_busy) DailyPlan
         +generate_all_plans() dict
+        -_urgency_score(task) float
         -_sort_by_priority() list[Task]
         -_find_slot(target, duration, busy, latest) int
         -_fits_in_window(task, window, start_time) bool
